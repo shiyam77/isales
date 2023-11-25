@@ -1,0 +1,82 @@
+Viafone – Dev server FTP info:
+
+Host: 185.227.110.252
+
+Username: root
+
+Password: heiXKOYO88zY
+
+Protocol: SFTP
+
+ 
+
+Viafone – Production server info:
+
+viafone - ftp details
+
+ftp://waws-prod-db3-125.ftp.azurewebsites.windows.net/site/wwwroot
+
+userName="viafront\$viafront" 
+
+userPWD="1Y49PhXPk5WZj94k5nCshhscGYGf3sb8Hc7YzeKnZJuKEgdwQoqoHoDmkHap"
+
+ 
+
+Installation
+
+ 
+
+1.Install angular globally: `npm install -g @angular/cli`
+
+ 
+
+2. Installing dependencies: `npm install` inside project directory.
+
+ 
+
+3.Viafone and Viasales are developed in angular 6 version
+
+ 
+
+4.Run `npm install` to install all dev dependencies.
+
+ 
+
+How to run?
+
+ 
+
+1.Run ng serve --open
+
+ 
+
+2.Navigate to http://localhost:4200/. The app will automatically reload if you change any of the source files.
+
+ 
+
+Changing environments:
+
+To change API url for dev and prod environments, we need to change in
+src/app/core/models/api-endpoints.ts
+
+ 
+
+To add new 
+
+ 
+
+General build command:
+
+ng build –prod
+
+ 
+
+build cmd for viafone and viasales:
+
+node --max_old_space_size=8192 ./node_modules/@angular/cli/bin/ng build
+--prod
+
+ 
+
+We are using this command since some npm packages take longer to be
+compiled.
